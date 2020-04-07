@@ -1,13 +1,13 @@
 summe = 0
-
 for feld in range(64):
-    reiskörner = 2**feld
-    summe += reiskörner
-    print(f"Feld {feld+1}. = {reiskörner:>27,} Reiskörner und damit insgesamt"
-          f"{summe:>28,} Reiskörner")
-
-
+      reiskorn = 2**feld
+      summe = summe + reiskorn
+      print("Feld {}. = {:>30,} Reiskörner und damit insgesamt {:>30,} Reiskörner"\
+            .format(feld+1,reiskorn,summe))
 gewicht = summe * 0.02 / 1000 / 1000
+print("Wenn ein Reiskorn 0,02 Gramm wiegt, wiegen die gesamten")
+print("Reiskörner {:18,.0f} Tonnen".format(gewicht)) 
 print()
-print("Wenn ein Reiskorn 0,02 Gramm wiegt, wiegen die gesamten"
-      f" Reiskörner {gewicht:,.0f} Tonnen")
+           
+
+
