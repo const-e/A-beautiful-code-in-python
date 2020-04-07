@@ -1,3 +1,5 @@
+import time
+
 from random import shuffle
 
 superlatives = "amazing gorgeous blazing stunning tremendous greatest best fantastic \
